@@ -17,8 +17,8 @@ public class RobotMap {
     // public static int rangefinderModule = 1;
     
     // Drive Train *These numbers are placeholders and are not final.*
-    public static final int frontLeftMotor = 1;
-    public static final int rearLeftMotor = 1;
-    public static final int frontRightMotor = 1;
-    public static final int rearRightMotor = 1;
+    public static final int DRIVE_FRONT_LEFT = 1;
+    public static final int DRIVE_REAR_LEFT = 1;
+    public static final int DRIVE_FRONT_RIGHT = 1;
+    public static final int DRIVE_REAR_RIGHT = 1;
 }
