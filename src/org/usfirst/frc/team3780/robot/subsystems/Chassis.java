@@ -26,6 +26,10 @@ public class Chassis extends Subsystem {
 			rearRight
 		);
 	}
+	
+	public void arcadeDrive(Joystick j) {
+		drive.arcadeDrive(j);
+	}
     
 	// Put methods for controlling this subsystem
 	// here. Call these from Commands.
