@@ -8,16 +8,17 @@ import edu.wpi.first.wpilibj.command.Command;
 public class DriveCommand extends Command {
 
     public DriveCommand() {
-        // Use requires() here to declare subsystem dependencies
-        // eg. requires(chassis);
+    	requires(Robot.chassis);
     }
 
     // Called just before this Command runs the first time
     protected void initialize() {
+    	
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	Robot.chassis.arcadeDrive(Robot.oi.getDriveJoystick());
     }
 
     // Make this return true when this Command no longer needs to run execute()
