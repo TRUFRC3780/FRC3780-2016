@@ -1,33 +1,44 @@
-
+  
+import org.usfirst.frc.team3780.robot.subsystems.*;
+import edu.wpi.first.wpilibj.*;
 /**
  * Write a description of class CorralForwardCommand here.
  * 
- * @author (your name) 
- * @version (a version number or a date)
+ * @author gregoryKaiser
+ * 
  */
-public class CorralForwardCommand
+public class CorralForwardCommand extends Command
 {
-    // instance variables - replace the example below with your own
-    private int x;
-
-    /**
-     * Constructor for objects of class CorralForwardCommand
-     */
+    private Corral corral;
+    
     public CorralForwardCommand()
     {
-        // initialise instance variables
-        x = 0;
+        super();
+        corral = Robot.corral;
     }
-
-    /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
-     */
-    public int sampleMethod(int y)
+    
+    protected void iniialize()
     {
-        // put your code here
-        return x + y;
+       corral.stop();
+    }
+    
+    protected void execute()
+    {
+        corral.driveForward(1.0);
+    }
+    
+    protected boolean isFinished()
+    {
+        return false;
+    }
+    
+    protected void end()
+    {
+        corral.stop();
+    }
+    
+    protected void interrupted()
+    {
+        end();
     }
 }
