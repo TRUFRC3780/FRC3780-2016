@@ -25,6 +25,10 @@ public class RobotMap {
     // Corral Talon port number --> placeholder
     public static final int CORRAL_TALON_ID = 1;
     
+    // Arm Talon port numbers --> placeholder
+    public static final int ARM_TALON_LOWER_ID = 1;
+    public static final int ARM_TALON_UPPER_ID = 1;
+    
     // Drive Joystick port --> placeholder
     public static final int DRIVE_JOYSTICK_ID = 1;
     
