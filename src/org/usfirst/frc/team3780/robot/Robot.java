@@ -35,7 +35,7 @@ public class Robot extends IterativeRobot {
 		chassis = new Chassis();
 		arm = new Arm();
 		compressor = new Compressor(RobotMap.COMPRESSOR_PCM_ID);
-		
+		compressor.start();
 //        chooser = new SendableChooser();
 //        chooser.addDefault("Default Auto", new ExampleCommand());
 ////        chooser.addObject("My Auto", new MyAutoCommand());
