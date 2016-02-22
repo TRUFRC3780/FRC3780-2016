@@ -27,4 +27,7 @@ public class RobotMap {
     
     // Drive Joystick port --> placeholder
     public static final int DRIVE_JOYSTICK_ID = 1;
+    
+    // Compressor PCM # --> placeholder
+    public static final int COMPRESSOR_PCM_ID = 1;
 }

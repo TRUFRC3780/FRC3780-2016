@@ -18,8 +18,8 @@ public class Robot extends IterativeRobot {
 
 	public static OI oi;
 	public static Chassis chassis;
-	public static
-	
+	public static Arm arm;
+	private Compressor compressor;
 
     Command autonomousCommand;
 //    SendableChooser chooser;
@@ -29,7 +29,12 @@ public class Robot extends IterativeRobot {
      * used for any initialization code.
      */
     public void robotInit() {
+//    	 Init fields
 		oi = new OI();
+		chassis = new Chassis();
+		arm = new Arm();
+		compressor = new Compressor(RobotMap.COMPRESSOR_PCM_ID);
+		
 //        chooser = new SendableChooser();
 //        chooser.addDefault("Default Auto", new ExampleCommand());
 ////        chooser.addObject("My Auto", new MyAutoCommand());
