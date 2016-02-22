@@ -18,6 +18,23 @@ public class Arm extends Subsystem {
 		upper = new Talon(RobotMap.ARM_TALON_UPPER_ID);
 	}
 	
+	public void stopLower() {
+		lower.set(0.0);
+	}
+	
+	public void stopUpper() {
+		upper.set(0.0);
+	}
+	
+	public void driveLower(double d) {
+		stopLower();
+		lower.set(d);
+	}
+	
+	public void driveUpper(double d) {
+		stopUpper();
+		upper.set(d);
+	}
 	
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
