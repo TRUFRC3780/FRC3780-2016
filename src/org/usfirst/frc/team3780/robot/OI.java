@@ -15,10 +15,15 @@ public class OI {
     // Joystick stick = new Joystick(port);
     // Button button = new JoystickButton(stick, buttonNumber);
 	
-	Joystick driveJoystick = new Joystick(RobotMap.DRIVE_JOYSTICK_ID);
+	Joystick leftJoystick = new Joystick(RobotMap.LEFT_JOYSTICK_ID);
+	Joystick rightJoystick = new Joystick(RobotMap.RIGHT_JOYSTICK_ID);
 	
 	public Joystick getDriveJoystick() {
-		return driveJoystick;
+		return leftJoystick;
+	}
+	
+	public Joystick getArmJoystick() {
+		return rightJoystick;
 	}
     
     // There are a few additional built in buttons you can use. Additionally,
