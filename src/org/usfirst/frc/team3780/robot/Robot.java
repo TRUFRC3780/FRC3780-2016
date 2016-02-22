@@ -19,6 +19,7 @@ public class Robot extends IterativeRobot {
 	public static OI oi;
 	public static Chassis chassis;
 	public static Arm arm;
+	public static Corral corral;
 	private Compressor compressor;
 
     Command autonomousCommand;

@@ -1,6 +1,9 @@
-  
+package org.usfirst.frc.team3780.robot.commands;
+
+import org.usfirst.frc.team3780.robot.*;
 import org.usfirst.frc.team3780.robot.subsystems.*;
 import edu.wpi.first.wpilibj.*;
+import edu.wpi.first.wpilibj.command.*;
 /**
  * Write a description of class CorralForwardCommand here.
  * 
@@ -11,13 +14,11 @@ public class CorralForwardCommand extends Command
 {
     private Corral corral;
     
-    public CorralForwardCommand()
-    {
-        super();
+    public CorralForwardCommand() {
         corral = Robot.corral;
     }
     
-    protected void iniialize()
+    protected void initialize()
     {
        corral.stop();
     }
