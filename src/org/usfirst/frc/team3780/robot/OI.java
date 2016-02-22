@@ -1,7 +1,7 @@
 package org.usfirst.frc.team3780.robot;
 
-import edu.wpi.first.wpilibj.buttons.Button;
-import org.usfirst.frc.team3780.robot.commands.ExampleCommand;
+import edu.wpi.first.wpilibj.buttons.*;
+import edu.wpi.first.wpilibj.*;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -14,6 +14,12 @@ public class OI {
     // number it is.
     // Joystick stick = new Joystick(port);
     // Button button = new JoystickButton(stick, buttonNumber);
+	
+	Joystick driveJoystick = new Joystick(RobotMap.DRIVE_JOYSTICK_ID);
+	
+	public Joystick getDriveJoystick() {
+		return driveJoystick;
+	}
     
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to

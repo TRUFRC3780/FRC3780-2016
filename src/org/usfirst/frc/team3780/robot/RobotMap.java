@@ -22,6 +22,9 @@ public class RobotMap {
     public static final int DRIVE_FRONT_RIGHT = 1;
     public static final int DRIVE_REAR_RIGHT = 1;
     
-    // Corral Talon port number
+    // Corral Talon port number --> placeholder
     public static final int CORRAL_TALON_ID = 1;
+    
+    // Drive Joystick port --> placeholder
+    public static final int DRIVE_JOYSTICK_ID = 1;
 }
