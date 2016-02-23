@@ -15,6 +15,7 @@ public class CorralForwardCommand extends Command
     private Corral corral;
     
     public CorralForwardCommand() {
+    	requires(Robot.corral);
         corral = Robot.corral;
     }
     

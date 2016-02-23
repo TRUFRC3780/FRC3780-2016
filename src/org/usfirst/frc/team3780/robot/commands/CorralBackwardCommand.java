@@ -18,7 +18,7 @@ public class CorralBackwardCommand extends Command
     
     public CorralBackwardCommand()
     {
-        super();
+    	requires(Robot.corral);
         corral = Robot.corral;
     }
     
