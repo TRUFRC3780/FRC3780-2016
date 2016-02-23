@@ -1,5 +1,6 @@
 package org.usfirst.frc.team3780.robot;
 
+import org.usfirst.frc.team3780.robot.commands.*;
 import edu.wpi.first.wpilibj.buttons.*;
 import edu.wpi.first.wpilibj.*;
 
@@ -20,6 +21,11 @@ public class OI {
 	
 	Button thumbPad = new JoystickButton(rightJoystick,1);
 	Button trigger  = new JoystickButton(rightJoystick,1);
+	
+	public OI() {
+		trigger.whileHeld(new UpperArmForwardCommand());
+		thumbPad.whileHeld(new UpperArmBackwardCommand());
+	}
 	
 	public Joystick getDriveJoystick() {
 		return leftJoystick;
