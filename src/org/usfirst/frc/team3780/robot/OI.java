@@ -18,12 +18,23 @@ public class OI {
 	Joystick leftJoystick = new Joystick(RobotMap.LEFT_JOYSTICK_ID);
 	Joystick rightJoystick = new Joystick(RobotMap.RIGHT_JOYSTICK_ID);
 	
+	Button thumbPad = new JoystickButton(rightJoystick,1);
+	Button trigger  = new JoystickButton(rightJoystick,1);
+	
 	public Joystick getDriveJoystick() {
 		return leftJoystick;
 	}
 	
 	public Joystick getArmJoystick() {
 		return rightJoystick;
+	}
+	
+	public Button getArmForwardButton() {
+		return trigger;
+	}
+	
+	public Button getArmBackwardButton() {
+		return thumbPad;
 	}
     
     // There are a few additional built in buttons you can use. Additionally,
