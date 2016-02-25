@@ -6,7 +6,7 @@ import org.usfirst.frc.team3780.robot.commands.*;
 import edu.wpi.first.wpilibj.*;
 
 /**
- *
+ * @author Andrew Lee
  */
 public class Arm extends Subsystem {
 

@@ -5,7 +5,9 @@ import org.usfirst.frc.team3780.robot.Robot;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
- *
+ * 
+ * @author Andrew Lee
+ * 
  */
 public class UpperArmBackwardCommand extends Command {
 

@@ -6,6 +6,8 @@ import edu.wpi.first.wpilibj.command.Command;
 
 /**
  *
+ * @author Andrew Lee
+ *
  */
 public class DriveLowerArm extends Command {
 	
