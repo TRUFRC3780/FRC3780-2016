@@ -3,6 +3,7 @@ package org.usfirst.frc.team3780.robot.subsystems;
 import edu.wpi.first.wpilibj.*;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import org.usfirst.frc.team3780.robot.*;
+import org.usfirst.frc.team3780.robot.commands.*;
 
 
 /**
@@ -36,7 +37,7 @@ public class Chassis extends Subsystem {
 
 	public void initDefaultCommand() {
         // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new DriveCommand());
 	}
 }
 
