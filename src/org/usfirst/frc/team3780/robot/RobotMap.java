@@ -18,18 +18,18 @@ public class RobotMap {
     // public static int rangefinderPort = 1;
     // public static int rangefinderModule = 1;
     
-    // Drive Train *These numbers are placeholders and are not final.*
-    public static final int DRIVE_FRONT_LEFT = 1;
-    public static final int DRIVE_REAR_LEFT = 1;
-    public static final int DRIVE_FRONT_RIGHT = 1;
-    public static final int DRIVE_REAR_RIGHT = 1;
+    // Drive Train
+    public static final int DRIVE_FRONT_LEFT  = 6;
+    public static final int DRIVE_REAR_LEFT   = 7;
+    public static final int DRIVE_FRONT_RIGHT = 4;
+    public static final int DRIVE_REAR_RIGHT  = 5;
     
     // Corral Talon port number --> placeholder
     public static final int CORRAL_TALON_ID = 1;
     
-    // Arm Talon port numbers --> placeholder
-    public static final int ARM_TALON_LOWER_ID = 1;
-    public static final int ARM_TALON_UPPER_ID = 1;
+    // Arm Talon port numbers
+    public static final int ARM_TALON_LOWER_ID = 2;
+    public static final int ARM_TALON_UPPER_ID = 3;
     
     // Drive Joystick port --> placeholder
     public static final int LEFT_JOYSTICK_ID = 1;
