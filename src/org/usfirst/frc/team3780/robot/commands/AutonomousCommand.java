@@ -1,5 +1,6 @@
 package org.usfirst.frc.team3780.robot.commands;
 
+import org.usfirst.frc.team3780.robot.*;
 import edu.wpi.first.wpilibj.command.Command;
 
 /**
@@ -10,6 +11,8 @@ public class AutonomousCommand extends Command {
     public AutonomousCommand() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
+    	requires(Robot.arm);
+    	requires(Robot.chassis);
     }
 
     // Called just before this Command runs the first time
