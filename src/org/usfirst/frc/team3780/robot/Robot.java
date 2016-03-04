@@ -23,7 +23,6 @@ public class Robot extends IterativeRobot {
 	public static Chassis chassis;
 	public static Arm arm;
 	public static Corral corral;
-	private Compressor compressor;
 
     Command autonomousCommand;
 //    SendableChooser chooser;
@@ -37,8 +36,6 @@ public class Robot extends IterativeRobot {
 		oi = new OI();
 		chassis = new Chassis();
 		arm = new Arm();
-		compressor = new Compressor(RobotMap.COMPRESSOR_PCM_ID);
-		compressor.start();
 //        chooser = new SendableChooser();
 //        chooser.addDefault("Default Auto", new ExampleCommand());
 ////        chooser.addObject("My Auto", new MyAutoCommand());
