@@ -44,6 +44,10 @@ public class Chassis extends Subsystem {
 		drive.setLeftRightMotorOutputs(speed, speed);
 	}
 	
+	public void stop() {
+		drive.setLeftRightMotorOutputs(0, 0);
+	}
+	
 	
 }
 
