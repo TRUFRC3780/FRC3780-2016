@@ -39,5 +39,11 @@ public class Chassis extends Subsystem {
         // Set the default command for a subsystem here.
         setDefaultCommand(new DriveCommand());
 	}
+	
+	public void driveForward(double speed) {
+		drive.setLeftRightMotorOutputs(speed, speed);
+	}
+	
+	
 }
 
