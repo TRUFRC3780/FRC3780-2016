@@ -31,9 +31,9 @@ public class RobotMap {
     public static final int ARM_TALON_LOWER_ID = 2;
     public static final int ARM_TALON_UPPER_ID = 3;
     
-    // Drive Joystick port --> placeholder
-    public static final int LEFT_JOYSTICK_ID = 1;
-    public static final int RIGHT_JOYSTICK_ID = 1;
+    // Drive Joystick port
+    public static final int LEFT_JOYSTICK_ID  = 1; // Telemachus
+    public static final int RIGHT_JOYSTICK_ID = 2; // Odysseus
     
     // Upper arm forward backward buttons
     public static final int UPPER_ARM_FORWARD_BUTTON_ID  = 3;
