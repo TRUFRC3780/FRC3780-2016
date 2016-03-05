@@ -35,4 +35,8 @@ public class RobotMap {
     public static final int LEFT_JOYSTICK_ID  = 1; // Telemachus
     public static final int RIGHT_JOYSTICK_ID = 2; // Odysseus
     
+    // Upper arm forward backward buttons
+    public static final int UPPER_ARM_FORWARD_BUTTON_ID  = 3;
+    public static final int UPPER_ARM_BACKWARD_BUTTON_ID = 2;
+    
 }
