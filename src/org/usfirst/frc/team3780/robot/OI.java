@@ -22,12 +22,12 @@ public class OI {
 	Joystick leftJoystick = new Joystick(RobotMap.LEFT_JOYSTICK_ID);
 	Joystick rightJoystick = new Joystick(RobotMap.RIGHT_JOYSTICK_ID);
 	
-	Button thumbPad = new JoystickButton(rightJoystick,1);
-	Button trigger  = new JoystickButton(rightJoystick,1);
+	Button armForwardButton  = new JoystickButton(rightJoystick,RobotMap.UPPER_ARM_FORWARD_BUTTON_ID);
+	Button armBackwardButton = new JoystickButton(rightJoystick,RobotMap.UPPER_ARM_BACKWARD_BUTTON_ID);
 	
 	public OI() {
-		trigger.whileHeld(new UpperArmForwardCommand());
-		thumbPad.whileHeld(new UpperArmBackwardCommand());
+		armForwardButton.whileHeld(new UpperArmForwardCommand());
+		armBackwardButton.whileHeld(new UpperArmBackwardCommand());
 	}
 	
 	public Joystick getDriveJoystick() {
@@ -38,13 +38,6 @@ public class OI {
 		return rightJoystick;
 	}
 	
-	public Button getArmForwardButton() {
-		return trigger;
-	}
-	
-	public Button getArmBackwardButton() {
-		return thumbPad;
-	}
     
     // There are a few additional built in buttons you can use. Additionally,
     // by subclassing Button you can create custom triggers and bind those to
