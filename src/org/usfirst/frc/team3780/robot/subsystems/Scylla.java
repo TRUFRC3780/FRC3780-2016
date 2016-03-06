@@ -3,7 +3,7 @@ package org.usfirst.frc.team3780.robot.subsystems;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 import org.usfirst.frc.team3780.robot.RobotMap;
-
+import org.usfirst.frc.team3780.robot.commands.*;
 import edu.wpi.first.wpilibj.*;
 
 /**
@@ -43,6 +43,7 @@ public class Scylla extends Subsystem {
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    	setDefaultCommand(new ScyllaDrive());
     }
 }
 

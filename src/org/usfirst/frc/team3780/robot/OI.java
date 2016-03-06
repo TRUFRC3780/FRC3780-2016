@@ -34,7 +34,7 @@ public class OI {
 		return leftJoystick;
 	}
 	
-	public Joystick getArmJoystick() {
+	public Joystick getScyllaJoystick() {
 		return rightJoystick;
 	}
 	
