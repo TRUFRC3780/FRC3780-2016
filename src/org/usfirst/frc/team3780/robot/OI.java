@@ -24,10 +24,12 @@ public class OI {
 	
 	Button scyllaForwardButton  = new JoystickButton(rightJoystick,RobotMap.SCYLLA_FORWARD_BUTTON_ID);
 	Button scyllaBackwardButton = new JoystickButton(rightJoystick,RobotMap.SCYLLA_BACKWARD_BUTTON_ID);
+	Button scyllaLeftForwardButton = new JoystickButton(rightJoystick,4);
 	
 	public OI() {
 		scyllaForwardButton.whileHeld(new ScyllaForward());
 		scyllaBackwardButton.whileHeld(new ScyllaBackward());
+		scyllaLeftForwardButton.whileHeld(new ScyllaLeftForward());
 	}
 	
 	public Joystick getDriveJoystick() {

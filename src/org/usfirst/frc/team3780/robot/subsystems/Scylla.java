@@ -20,16 +20,16 @@ public class Scylla extends Subsystem {
 	}
 	
 	public void drive(double d) {
+		driveLeft(d);
+		driveRight(d);
+	}
+	
+	public void driveLeft(double d) {
 		leftTalon.set(d);
+	}
+	
+	public void driveRight(double d) {
 		rightTalon.set(-1 * d);
-	}
-	
-	public void driveForward(double d) {
-		drive(d);
-	}
-	
-	public void driveBackward(double d) {
-		drive(-1 * d);
 	}
 	
 	public void stop() {

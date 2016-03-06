@@ -26,7 +26,7 @@ public class DriveCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.chassis.arcadeDrive(Robot.oi.getDriveJoystick().getY(), Robot.oi.getDriveJoystick().getX()*-1);
+    	Robot.chassis.arcadeDrive(Robot.oi.getDriveJoystick());
     }
 
     // Make this return true when this Command no longer needs to run execute()

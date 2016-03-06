@@ -1,14 +1,16 @@
 package org.usfirst.frc.team3780.robot.commands;
 
+import org.usfirst.frc.team3780.robot.Robot;
+
 import edu.wpi.first.wpilibj.command.Command;
 import org.usfirst.frc.team3780.robot.*;
 
 /**
  *
  */
-public class ScyllaForward extends Command {
+public class ScyllaLeftBackward extends Command {
 
-    public ScyllaForward() {
+    public ScyllaLeftBackward() {
     	try {
     		requires(Robot.scylla);
     	} catch(IllegalArgumentException e) {
@@ -18,12 +20,10 @@ public class ScyllaForward extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.scylla.stop();
     }
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.scylla.drive(0.25);
     }
 
     // Make this return true when this Command no longer needs to run execute()
@@ -33,12 +33,10 @@ public class ScyllaForward extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	Robot.scylla.stop();
     }
 
     // Called when another command which requires one or more of the same
     // subsystems is scheduled to run
     protected void interrupted() {
-    	end();
     }
 }

@@ -56,12 +56,12 @@ public class ScyllaDrive extends Command {
     	
     	
     	if(y < 0.0) {        // Forward
-    		if(!(elapsedTime > MAXIMUM_TIME)) Robot.scylla.driveForward(1.0);
+    		if(!(elapsedTime > MAXIMUM_TIME)) Robot.scylla.drive(1.0);
     		direction = 1;
     		
     		
     	} else if(y > 0.0) { // Backward
-    		if(!(elapsedTime < MINIMUM_TIME)) Robot.scylla.driveBackward(1.0);
+    		if(!(elapsedTime < MINIMUM_TIME)) Robot.scylla.drive(-1.0);
     		direction = -1;
     		
     	} else {           // Stop
