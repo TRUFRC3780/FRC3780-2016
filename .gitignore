@@ -1,3 +1,6 @@
 *.DS_Store
 *.ini
 bin
+build
+dist
+sysProps.xml
