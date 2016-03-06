@@ -19,15 +19,15 @@ public class OI {
     // Joystick stick = new Joystick(port);
     // Button button = new JoystickButton(stick, buttonNumber);
 	
-	Joystick leftJoystick = new Joystick(RobotMap.LEFT_JOYSTICK_ID);
+	Joystick leftJoystick  = new Joystick(RobotMap.LEFT_JOYSTICK_ID);
 	Joystick rightJoystick = new Joystick(RobotMap.RIGHT_JOYSTICK_ID);
 	
-	Button armForwardButton  = new JoystickButton(rightJoystick,RobotMap.UPPER_ARM_FORWARD_BUTTON_ID);
-	Button armBackwardButton = new JoystickButton(rightJoystick,RobotMap.UPPER_ARM_BACKWARD_BUTTON_ID);
+	Button scyllaForwardButton  = new JoystickButton(rightJoystick,RobotMap.SCYLLA_FORWARD_BUTTON_ID);
+	Button scyllaBackwardButton = new JoystickButton(rightJoystick,RobotMap.SCYLLA_BACKWARD_BUTTON_ID);
 	
 	public OI() {
-//		armForwardButton.whileHeld(new UpperArmForwardCommand());
-//		armBackwardButton.whileHeld(new UpperArmBackwardCommand());
+		scyllaForwardButton.whileHeld(new ScyllaForward());
+		scyllaBackwardButton.whileHeld(new ScyllaBackward());
 	}
 	
 	public Joystick getDriveJoystick() {

@@ -29,8 +29,8 @@ public class RobotMap {
     public static final int SCYLLA_TALON_LEFT_ID  = 2;
     
     // Drive Joystick port
-    public static final int LEFT_JOYSTICK_ID  = 1; // Telemachus
-    public static final int RIGHT_JOYSTICK_ID = 2; // Odysseus
+    public static final int LEFT_JOYSTICK_ID  = 0; // Telemachus
+    public static final int RIGHT_JOYSTICK_ID = 1; // Odysseus
     
     // Scylla buttons
     public static final int SCYLLA_FORWARD_BUTTON_ID  = 3;

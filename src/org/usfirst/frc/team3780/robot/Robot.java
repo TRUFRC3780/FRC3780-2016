@@ -21,7 +21,7 @@ public class Robot extends IterativeRobot {
 
 	public static OI oi;
 	public static Chassis chassis;
-//	public static Arm arm;
+	public static Scylla scylla;
 
     Command autonomousCommand;
 //    SendableChooser chooser;
@@ -34,7 +34,7 @@ public class Robot extends IterativeRobot {
 //    	 Init fields
 		oi = new OI();
 		chassis = new Chassis();
-//		arm = new Arm();
+		scylla = new Scylla();
 //        chooser = new SendableChooser();
 //        chooser.addDefault("Default Auto", new ExampleCommand());
 ////        chooser.addObject("My Auto", new MyAutoCommand());
