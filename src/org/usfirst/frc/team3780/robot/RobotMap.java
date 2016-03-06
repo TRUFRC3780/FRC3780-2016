@@ -19,10 +19,10 @@ public class RobotMap {
     // public static int rangefinderModule = 1;
     
     // Drive Train
-    public static final int DRIVE_FRONT_LEFT  = 6;
-    public static final int DRIVE_REAR_LEFT   = 7;
-    public static final int DRIVE_FRONT_RIGHT = 4;
-    public static final int DRIVE_REAR_RIGHT  = 5;
+    public static final int DRIVE_FRONT_LEFT  = 5;
+    public static final int DRIVE_REAR_LEFT   = 4;
+    public static final int DRIVE_FRONT_RIGHT = 6;
+    public static final int DRIVE_REAR_RIGHT  = 7;
     
     // Corral Talon port number --> placeholder
     public static final int CORRAL_TALON_ID = 1;

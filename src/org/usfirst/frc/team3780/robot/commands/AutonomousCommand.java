@@ -11,8 +11,13 @@ public class AutonomousCommand extends Command {
     public AutonomousCommand() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
-    	requires(Robot.arm);
-    	requires(Robot.chassis);
+    	try {
+    		requires(Robot.arm);
+    		requires(Robot.chassis);
+    	}
+    	catch(IllegalArgumentException e) {
+    		
+    	}
     }
 
     // Called just before this Command runs the first time

@@ -64,7 +64,7 @@ public class Robot extends IterativeRobot {
 	 * or additional comparisons to the switch structure below with additional strings & commands.
 	 */
     public void autonomousInit() {
-        autonomousCommand = new DriveForwardForTime(0.5,5.0);
+        autonomousCommand = new DriveForwardForTime(6.5,0.7); // Seconds,power
         
 		/* String autoSelected = SmartDashboard.getString("Auto Selector", "Default");
 		switch(autoSelected) {

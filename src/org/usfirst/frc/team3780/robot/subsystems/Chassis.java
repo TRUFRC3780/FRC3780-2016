@@ -21,17 +21,22 @@ public class Chassis extends Subsystem {
 		rearRight  = new Talon(RobotMap.DRIVE_REAR_RIGHT);
 		
 		drive = new RobotDrive(
-			frontLeft,
-			rearLeft,
 			frontRight,
-			rearRight
+			rearRight,
+			frontLeft,
+			rearLeft
 		);
+		
 	}
 	
 	public void arcadeDrive(Joystick j) {
-		drive.arcadeDrive(j);
+		this.arcadeDrive(j.getY(),j.getX()*-1);
 	}
     
+	public void arcadeDrive(double x, double y) {
+		drive.arcadeDrive(x, y);
+	}
+	
 	// Put methods for controlling this subsystem
 	// here. Call these from Commands.
 

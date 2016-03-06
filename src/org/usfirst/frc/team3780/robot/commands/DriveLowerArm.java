@@ -14,7 +14,12 @@ public class DriveLowerArm extends Command {
 	private Joystick joystick = Robot.oi.getArmJoystick();
 	
     public DriveLowerArm() {
-    	requires(Robot.arm);
+    	try {
+    		requires(Robot.arm);
+    	}
+    	catch(IllegalArgumentException e) {
+    		
+    	}
     }
 
     // Called just before this Command runs the first time
@@ -25,9 +30,9 @@ public class DriveLowerArm extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	double y = joystick.getY();
-    	if(y > 0) {
+    	if(y < 0) {
     		Robot.arm.driveLower(1.0);
-    	} else if(y < 0) {
+    	} else if(y > 0) {
     		Robot.arm.driveLower(-1.0);
     	} else { // y == 0
     		Robot.arm.stopLower();

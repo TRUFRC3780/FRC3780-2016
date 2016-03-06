@@ -16,7 +16,11 @@ public class DriveForwardForTime extends Command {
 	private double speed;
 	
     public DriveForwardForTime(double seconds, double speed) {
-    	requires(Robot.chassis);
+    	try {
+    		requires(Robot.chassis);
+    	} catch(IllegalArgumentException e) {
+    		
+    	}
     	timer = new Timer();
     	endTime = seconds;
     	this.speed = speed;

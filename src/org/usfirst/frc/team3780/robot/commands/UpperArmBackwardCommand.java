@@ -12,7 +12,12 @@ import edu.wpi.first.wpilibj.command.Command;
 public class UpperArmBackwardCommand extends Command {
 
     public UpperArmBackwardCommand() {
-    	requires(Robot.arm);
+    	try {
+    		requires(Robot.arm);
+    	}
+    	catch(IllegalArgumentException e) {
+    			
+    	}
     }
 
     // Called just before this Command runs the first time
