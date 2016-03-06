@@ -24,19 +24,16 @@ public class RobotMap {
     public static final int DRIVE_FRONT_RIGHT = 6;
     public static final int DRIVE_REAR_RIGHT  = 7;
     
-    // Corral Talon port number --> placeholder
-    public static final int CORRAL_TALON_ID = 1;
-    
-    // Arm Talon port numbers
-    public static final int ARM_TALON_LOWER_ID = 2;
-    public static final int ARM_TALON_UPPER_ID = 3;
+    // Scylla Talon numbers
+    public static final int SCYLLA_TALON_RIGHT_ID = 3;
+    public static final int SCYLLA_TALON_LEFT_ID  = 2;
     
     // Drive Joystick port
     public static final int LEFT_JOYSTICK_ID  = 1; // Telemachus
     public static final int RIGHT_JOYSTICK_ID = 2; // Odysseus
     
-    // Upper arm forward backward buttons
-    public static final int UPPER_ARM_FORWARD_BUTTON_ID  = 3;
-    public static final int UPPER_ARM_BACKWARD_BUTTON_ID = 2;
+    // Scylla buttons
+    public static final int SCYLLA_FORWARD_BUTTON_ID  = 3;
+    public static final int SCYLLA_BACKWARD_BUTTON_ID = 2;
     
 }
