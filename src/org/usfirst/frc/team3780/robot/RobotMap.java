@@ -19,10 +19,10 @@ public class RobotMap {
     // public static int rangefinderModule = 1;
     
     // Drive Train
-    public static final int DRIVE_FRONT_LEFT  = 5;
-    public static final int DRIVE_REAR_LEFT   = 4;
-    public static final int DRIVE_FRONT_RIGHT = 6;
-    public static final int DRIVE_REAR_RIGHT  = 7;
+    public static final int DRIVE_FRONT_LEFT  = 7;
+    public static final int DRIVE_REAR_LEFT   = 6;
+    public static final int DRIVE_FRONT_RIGHT = 4;
+    public static final int DRIVE_REAR_RIGHT  = 5;
     
     // Scylla Talon numbers
     public static final int SCYLLA_TALON_RIGHT_ID = 3;
