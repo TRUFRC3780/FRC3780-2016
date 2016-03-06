@@ -26,8 +26,8 @@ public class OI {
 	Button armBackwardButton = new JoystickButton(rightJoystick,RobotMap.UPPER_ARM_BACKWARD_BUTTON_ID);
 	
 	public OI() {
-		armForwardButton.whileHeld(new UpperArmForwardCommand());
-		armBackwardButton.whileHeld(new UpperArmBackwardCommand());
+//		armForwardButton.whileHeld(new UpperArmForwardCommand());
+//		armBackwardButton.whileHeld(new UpperArmBackwardCommand());
 	}
 	
 	public Joystick getDriveJoystick() {
