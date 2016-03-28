@@ -32,6 +32,14 @@ public class Scylla extends Subsystem {
 		rightTalon.set(-1 * d);
 	}
 	
+	public void stopLeft() {
+		leftTalon.set(0.0);
+	}
+	
+	public void stopRight() {
+		rightTalon.set(0.0);
+	}
+	
 	public void stop() {
 		leftTalon.set(0.0);
 		rightTalon.set(0.0);

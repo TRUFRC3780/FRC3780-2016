@@ -22,14 +22,23 @@ public class OI {
 	Joystick leftJoystick  = new Joystick(RobotMap.LEFT_JOYSTICK_ID);
 	Joystick rightJoystick = new Joystick(RobotMap.RIGHT_JOYSTICK_ID);
 	
-	Button scyllaForwardButton  = new JoystickButton(rightJoystick,RobotMap.SCYLLA_FORWARD_BUTTON_ID);
-	Button scyllaBackwardButton = new JoystickButton(rightJoystick,RobotMap.SCYLLA_BACKWARD_BUTTON_ID);
-	Button scyllaLeftForwardButton = new JoystickButton(rightJoystick,4);
+	// Scylla buttons
+	Button scyllaForwardButton       = new JoystickButton(rightJoystick,RobotMap.SCYLLA_FORWARD_BUTTON_ID);
+	Button scyllaBackwardButton      = new JoystickButton(rightJoystick,RobotMap.SCYLLA_BACKWARD_BUTTON_ID);
+	Button scyllaLeftForwardButton   = new JoystickButton(rightJoystick,RobotMap.SCYLLA_LEFT_FORWARD_BUTTON_ID);
+	Button scyllaLeftBackwardButton  = new JoystickButton(rightJoystick,RobotMap.SCYLLA_LEFT_BACKWARD_BUTTON_ID);
+	Button scyllaRightForwardButton  = new JoystickButton(rightJoystick,RobotMap.SCYLLA_RIGHT_FORWARD_BUTTON_ID);
+	Button scyllaRightBackwardButton = new JoystickButton(rightJoystick,RobotMap.SCYLLA_RIGHT_BACKWARD_BUTTON_ID);
 	
 	public OI() {
 		scyllaForwardButton.whileHeld(new ScyllaForward());
 		scyllaBackwardButton.whileHeld(new ScyllaBackward());
+		
+		
 		scyllaLeftForwardButton.whileHeld(new ScyllaLeftForward());
+		scyllaLeftBackwardButton.whileHeld(new ScyllaLeftBackward());
+		scyllaRightBackwardButton.whileHeld(new ScyllaRightForward());
+		scyllaRightBackwardButton.whileHeld(new ScyllaRightBackward());
 	}
 	
 	public Joystick getDriveJoystick() {

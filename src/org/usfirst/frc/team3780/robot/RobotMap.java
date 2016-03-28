@@ -33,7 +33,10 @@ public class RobotMap {
     public static final int RIGHT_JOYSTICK_ID = 0; // Odysseus
     
     // Scylla buttons
-    public static final int SCYLLA_FORWARD_BUTTON_ID  = 3;
-    public static final int SCYLLA_BACKWARD_BUTTON_ID = 2;
-    
+    public static final int SCYLLA_FORWARD_BUTTON_ID        = 3;
+    public static final int SCYLLA_BACKWARD_BUTTON_ID       = 2;
+    public static final int SCYLLA_LEFT_FORWARD_BUTTON_ID   = 1;
+    public static final int SCYLLA_LEFT_BACKWARD_BUTTON_ID  = 1;
+    public static final int SCYLLA_RIGHT_FORWARD_BUTTON_ID  = 1;
+    public static final int SCYLLA_RIGHT_BACKWARD_BUTTON_ID = 1;
 }
