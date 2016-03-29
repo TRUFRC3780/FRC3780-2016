@@ -35,9 +35,7 @@ public class OI {
 		scyllaBackwardButton.whileHeld(new ScyllaBackward());
 		
 		
-		scyllaLeftForwardButton.whileHeld(new ScyllaLeftForward());
 		scyllaLeftBackwardButton.whileHeld(new ScyllaLeftBackward());
-		scyllaRightBackwardButton.whileHeld(new ScyllaRightForward());
 		scyllaRightBackwardButton.whileHeld(new ScyllaRightBackward());
 	}
 	
